@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jankenchou.asus_pc.chinyingze20180328"
+    android:versionCode="2"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name = "android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/display_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:debuggable="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name="com.jankenchou.asus_pc.chinyingze20180328.menu_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jankenchou.asus_pc.chinyingze20180328.login_page"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jankenchou.asus_pc.chinyingze20180328.in_game"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.jankenchou.asus_pc.chinyingze20180328.error_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity android:name="com.jankenchou.asus_pc.chinyingze20180328.match_making"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity android:name="com.jankenchou.asus_pc.chinyingze20180328.animationBOX"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <service android:name="com.jankenchou.asus_pc.chinyingze20180328.MyService"/>
+        <service android:name="com.jankenchou.asus_pc.chinyingze20180328.MyServiceInGame"/>
+    </application>
+
+</manifest>

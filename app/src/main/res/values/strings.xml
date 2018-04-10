@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ChinYingZe20180328</string>
+    <string name="display_name">じゃんけん超</string>
+    <string name="tap_to_start">タップ</string>
+    <string name="start">戦闘</string>
+    <string name="quit">やめる</string>
+    <string name="waiting">相手検索中. . .</string>
+    <string name="waitingReply">返事待ち</string>
+    <string name="opponentFOUND">相手発見</string>
+    <string name="opponent_decline">相手に断りました</string>
+    <string name="playerOne">ぼく</string>
+    <string name="playerTwo">きみ</string>
+    <string name="phase_one">選択中</string>
+    <string name="phase_two">待ち</string>
+    <string name="phase_three">じゃんけんぽん</string>
+    <string name="changing_phase_one">選択フェース</string>
+    <string name="changing_phase_1.5">準備フェース</string>
+    <string name="changing_phase_two">じゃんけんぽん</string>
+    <string name="end">戦闘終了</string>
+    <string name="sound_effect_credit">Sound Effect from: www.zapsplat.com</string>
+
+    <string name="facebook_app_id">577829585918462</string>
+</resources>

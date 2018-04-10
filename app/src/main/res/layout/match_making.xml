@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_2sdp"
+    android:background="@drawable/match_making_board"
+    android:id="@+id/match_making"
+    android:tint="#4D000000">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/opponent_detail"
+        android:layout_below="@id/status"
+        android:background="@drawable/paper"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_40sdp"/>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:id="@+id/accept_battle"
+        android:text="O"
+        android:textSize="@dimen/_15ssp"
+        android:padding="5sp"
+        android:background="@drawable/accept_button_shape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/battlewallpaper"
+    tools:context="com.jankenchou.asus_pc.chinyingze20180328.menu_screen">
+
+    <FrameLayout
+        android:layout_width="@dimen/_305sdp"
+        android:layout_height="@dimen/_514sdp"
+        android:foregroundGravity="center_vertical"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullscreen_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:keepScreenOn="true"
+                android:src="@drawable/title_internship_burned"/>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center_horizontal" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook"
+                android:layout_below="@id/google"
+
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_5sdp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/start"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/buttonshape"
+                android:id="@+id/start_button"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/quit"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/buttonshape"
+                android:id="@+id/quit_button"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sound_effect_credit"
+    android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
